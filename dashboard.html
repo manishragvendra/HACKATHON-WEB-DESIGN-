@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <h2 id="dashRole"></h2>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Upload Document</h3>
+    <input type="file">
+    <input type="text" placeholder="Document Tags">
+    <button>Upload</button>
+  </div>
+
+  <div class="card">
+    <h3>Documents</h3>
+    <ul>
+      <li>Policy.pdf</li>
+      <li>Finance.xlsx</li>
+      <li>ProjectPlan.docx</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+document.getElementById("dashRole").innerText =
+  localStorage.getItem("selectedRole") + " DASHBOARD";
+</script>
+
+</body>
+</html>
